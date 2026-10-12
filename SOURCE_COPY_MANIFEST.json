@@ -1,0 +1,289 @@
+{
+  "commit": "86d10426f486bfffa09ac6162a37d7190f93d178",
+  "commit_tree": "36435fd693298edb0bcb6d19d25318f1cc03dbaf",
+  "license_path": "LICENSE",
+  "license": "MIT",
+  "included_files": [
+    {
+      "path": "hearthline-alexa-mcp/LICENSE",
+      "git_blob_sha": "cb5763a556567d39fd138c9c181c91f7d9a7f61a",
+      "upstream_size_bytes": 1073,
+      "local_sha256": "f007bc7870f5e595e0ede9b68fd27399f645ee81591c06b3b70f0556c7222f47",
+      "local_bytes": 1073,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/README.md",
+      "git_blob_sha": "fc1bed4ee9c7603e2396ed11bdf84b30fb4e610d",
+      "upstream_size_bytes": 8112,
+      "local_sha256": "e36603d907afa00fd416ee5cbd9b5cc6cdcf867708e6a7f22ba12cbf4250549b",
+      "local_bytes": 6780,
+      "unchanged_from_upstream": false
+    },
+    {
+      "path": "hearthline-alexa-mcp/package.json",
+      "git_blob_sha": "867c4eed664c941b29fb3b97f660b91e46d65b2c",
+      "upstream_size_bytes": 425,
+      "local_sha256": "bbb9d379165fda61b5ed3677781cd677982a026e1926d128af48adb89a5acd05",
+      "local_bytes": 425,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/app-resource.mjs",
+      "git_blob_sha": "ef6dcf403d6905a0bed9bdbba601b9a84520664b",
+      "upstream_size_bytes": 11625,
+      "local_sha256": "a57fff804d5b1fa32781933bc2f0f2eb42400341abb9d20e8715ec9898dd7ce1",
+      "local_bytes": 11625,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/auth-env.mjs",
+      "git_blob_sha": "0ea5d18c3448645e6124bbcde04429cb7f4a5fd0",
+      "upstream_size_bytes": 1717,
+      "local_sha256": "273d66d9ecde6c8c16739a4b6b0a93b6918e69f662dd02b388af19e1d7734dd7",
+      "local_bytes": 1717,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/authority.mjs",
+      "git_blob_sha": "b1282a3a82fd4dd06f053e649fa87c7bcb69e97d",
+      "upstream_size_bytes": 10995,
+      "local_sha256": "6634941b23cebd6486af0eaca2c48212168803751479fa2be369a82030ad9245",
+      "local_bytes": 10995,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/mcp-server.mjs",
+      "git_blob_sha": "0c34a9c7809eb60f3fce16c1d4ce61d4b03a6d27",
+      "upstream_size_bytes": 23539,
+      "local_sha256": "eb7b275c4b498cba19a14add208ef18f6318ab1bb8816d43a57d9be13cb986d2",
+      "local_bytes": 23539,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/nws.mjs",
+      "git_blob_sha": "6c79b11574f5068a86bbbb466b0009784be4be4a",
+      "upstream_size_bytes": 4645,
+      "local_sha256": "69057b7eb9e0d4986e9a37157be425c61e7bd59a48e711751ae753805a02a038",
+      "local_bytes": 4645,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/orchestrator.mjs",
+      "git_blob_sha": "9c8334c846bc5ce6e720b8bc8be10944bd84a0b8",
+      "upstream_size_bytes": 13698,
+      "local_sha256": "1ed84da417bd92898927ff651d1742211cb9cf22be01ce7c951f1a7be992d0e1",
+      "local_bytes": 13698,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/server.mjs",
+      "git_blob_sha": "50751c551de0542ffe7c50d2c48bd73331183df8",
+      "upstream_size_bytes": 1209,
+      "local_sha256": "3d2d03075a2b2c837782e2d4a79a256ef455a428c9fd659bc7ecd3684168d513",
+      "local_bytes": 1209,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/stdio-server.mjs",
+      "git_blob_sha": "b2879a453d0e7a2392a8ef7a462b48ed78069826",
+      "upstream_size_bytes": 602,
+      "local_sha256": "aff2132396814b76b059b5497944ee6cab8ca85e63bdd57a5e46899684d24e33",
+      "local_bytes": 602,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/stdio-transport.mjs",
+      "git_blob_sha": "cddf5b91f4dceb82dba91019954f3ca2ca747a65",
+      "upstream_size_bytes": 5233,
+      "local_sha256": "4d740673487c6ad7cf8f477c3d5fe8523811710891639ddecfd0db1b80bcd7e2",
+      "local_bytes": 5233,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/store.mjs",
+      "git_blob_sha": "239df759d56be68e194dbd2e677a248407d51e2a",
+      "upstream_size_bytes": 3045,
+      "local_sha256": "9095c2bd8ba0fc264856e4b46841ef409a2e8a27e81b0976fea6d4c5a7269410",
+      "local_bytes": 3045,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/tools.mjs",
+      "git_blob_sha": "a4d7ee97fa36d1f8b52136047898fc7685d4b179",
+      "upstream_size_bytes": 8577,
+      "local_sha256": "6299e2c2eae5bf99cd4ef49723fb40026f4a0ed5059fba1fc2bf8001ec146927",
+      "local_bytes": 8577,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/workboard-tools.mjs",
+      "git_blob_sha": "30bbf26ed2847d9b37c1192e89bb5b0e31009bb5",
+      "upstream_size_bytes": 3873,
+      "local_sha256": "888a7aaa52132ea1662703dcb747a0026af555c623cdb6c8de6d3c979aaebee9",
+      "local_bytes": 3873,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/src/workboard.mjs",
+      "git_blob_sha": "003f14a954ada0caf59332ac71f763fbb2a0025e",
+      "upstream_size_bytes": 10076,
+      "local_sha256": "a1c8dd62e83c2526835c67e99815c5eb56267657731abf156e22fa6ce1894131",
+      "local_bytes": 10076,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/docs/ARCHITECTURE.md",
+      "git_blob_sha": "50eda6ebd72bbbd45b4e657b8175fb2d54f712ca",
+      "upstream_size_bytes": 2332,
+      "local_sha256": "8102b53b9728fc61310cb2a79bc65919609d1b180fabcc9ddfc5a9a8fa5b50a0",
+      "local_bytes": 2332,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/docs/AUTHORITY.md",
+      "git_blob_sha": "cb02106839ae54df069b243593bb749db76da900",
+      "upstream_size_bytes": 3425,
+      "local_sha256": "49fa69c92bdaab21a60516cebd725b81597bd9ea6fb46c195b1d71b7e1e1914b",
+      "local_bytes": 3425,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/docs/DEMO.md",
+      "git_blob_sha": "e25824cf49fed6b9b26ad526eeb9cc378a9302f0",
+      "upstream_size_bytes": 1598,
+      "local_sha256": "3e06e06a351ef86a7094ab54695dce20ffea65978a365c75d87fa20050dee916",
+      "local_bytes": 1598,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/docs/FRICTION_LOG.md",
+      "git_blob_sha": "f3de57eabfd743213bc1629bb3614ddf1fd24dfe",
+      "upstream_size_bytes": 2050,
+      "local_sha256": "dc01a240147efbcbc704581d9deada7131199f6de97641578e47ff2b9af34b75",
+      "local_bytes": 1955,
+      "unchanged_from_upstream": false
+    },
+    {
+      "path": "hearthline-alexa-mcp/docs/MCP_APP_CONTROLS.md",
+      "git_blob_sha": "78b6b2451adf3af30da3e39902194d7b67fa6194",
+      "upstream_size_bytes": 3741,
+      "local_sha256": "be979a4ce2cdb36295a04ddacc29ea250b69f861096f95e1119622817bf40062",
+      "local_bytes": 2287,
+      "unchanged_from_upstream": false
+    },
+    {
+      "path": "hearthline-alexa-mcp/docs/runtime-conformance.md",
+      "git_blob_sha": "6c70cc5e2846b3052bc09d4347f655a7a7e7769d",
+      "upstream_size_bytes": 2648,
+      "local_sha256": "f1dbcb7f66e911848d40b739c71c73eb7c24511293852f56d124415791e68655",
+      "local_bytes": 2648,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-alexa-mcp/scripts/demo.mjs",
+      "git_blob_sha": "baae0db0b8c0e862040ce0b5761ead22d8481e7e",
+      "upstream_size_bytes": 4107,
+      "local_sha256": "267a2d8719523ae56e0c7d67eb7ac768be94967bc896afefb7239cff285fe599",
+      "local_bytes": 4107,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-browser-demo/BUILD_FEEDBACK.md",
+      "git_blob_sha": "c1eeaafeed4b11a8500639616dc018f6a66f05e5",
+      "upstream_size_bytes": 2923,
+      "local_sha256": "c08a9e93c53e2c8e11df999b924c6826966bd05411ac4bbc3e0c064e9a74e421",
+      "local_bytes": 1460,
+      "unchanged_from_upstream": false
+    },
+    {
+      "path": "hearthline-browser-demo/README.md",
+      "git_blob_sha": "ebf64a5af22bd6ab33e5cce950553b635001bd4f",
+      "upstream_size_bytes": 9078,
+      "local_sha256": "c255b87b0d2a4d5b0264a90e6809a6864122ba529b62abf4aa780b876a637fd5",
+      "local_bytes": 8291,
+      "unchanged_from_upstream": false
+    },
+    {
+      "path": "hearthline-browser-demo/app.mjs",
+      "git_blob_sha": "044d82fe07d83511d5b41d856ca0a2e048989698",
+      "upstream_size_bytes": 18070,
+      "local_sha256": "051f6c797308a33d81a781d332b3fd1787bdda565ed6e82dc22859c1e7d86015",
+      "local_bytes": 18070,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-browser-demo/index.html",
+      "git_blob_sha": "986bcde275a5d1cca0fbdb0d298a3413bb84e87d",
+      "upstream_size_bytes": 5935,
+      "local_sha256": "b753090e126a947b9fc9bb6e78c9b45f6fa8c76d47653526e18ca18d19c81bc8",
+      "local_bytes": 5935,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-browser-demo/record-workboard.mjs",
+      "git_blob_sha": "a52470e30716c1428deb8f126ce4e2fbed800f60",
+      "upstream_size_bytes": 17639,
+      "local_sha256": "9c7eecf9b3c89fb08a11d91748ded172193818d628e0052989294eae460eebf6",
+      "local_bytes": 17639,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-browser-demo/record.py",
+      "git_blob_sha": "d5b200cc0dd724876b543f4a1079012e095742b4",
+      "upstream_size_bytes": 7673,
+      "local_sha256": "07a477f88401f5968d1adfdcb62994f021cad67717b070f732f5ea7d36050e43",
+      "local_bytes": 7673,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-browser-demo/server.mjs",
+      "git_blob_sha": "03c6919ee1b261ea7078fa48343101fa1e28c5b4",
+      "upstream_size_bytes": 6885,
+      "local_sha256": "642722eb13e347e44a443ea3ede562761da99355e69ccc5941f25b013f2f08bf",
+      "local_bytes": 6885,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-browser-demo/style.css",
+      "git_blob_sha": "e4051703cff772d7daf3fad5d76580c38a776d89",
+      "upstream_size_bytes": 8652,
+      "local_sha256": "ba1ab1a89f92260172a84dec3a02c9a5702742837ea7dd95e24b7f933c873f52",
+      "local_bytes": 8652,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-browser-demo/workboard-ui.mjs",
+      "git_blob_sha": "595fc4ddf488a3548d76fa4b5c167f17c8a82224",
+      "upstream_size_bytes": 10510,
+      "local_sha256": "ac8d308e41b07dc91d895ecf06af5523b12c1418e78ff752ad2e8096abb38554",
+      "local_bytes": 10510,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "hearthline-browser-demo/worker.mjs",
+      "git_blob_sha": "aa4640755e7531d14ec7f05b6c83cdbea8248dd5",
+      "upstream_size_bytes": 1546,
+      "local_sha256": "2932c45976714176dbf2486d0fd15e08296177dda1cff728a64fe272f2ef6557",
+      "local_bytes": 1546,
+      "unchanged_from_upstream": true
+    },
+    {
+      "path": "LICENSE",
+      "git_blob_sha": "2d2a35a69e3896b7c6b885c1faebae2f2f8bc9c1",
+      "upstream_size_bytes": 1091,
+      "local_sha256": "2c961cd561150af9a4f94f3f48f0bad7bf271acd0f9cdaa1d354c511b94e84d8",
+      "local_bytes": 1091,
+      "unchanged_from_upstream": true
+    }
+  ],
+  "added_file": "README.md",
+  "added_file_sha256": "84e52c77ab6959681325b8db947b0807ff9d90a234d213205179b00bbf624de6",
+  "modified_files": [
+    "hearthline-alexa-mcp/README.md",
+    "hearthline-alexa-mcp/docs/MCP_APP_CONTROLS.md",
+    "hearthline-alexa-mcp/docs/FRICTION_LOG.md",
+    "hearthline-browser-demo/BUILD_FEEDBACK.md",
+    "hearthline-browser-demo/README.md"
+  ]
+}
