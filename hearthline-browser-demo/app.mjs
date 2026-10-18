@@ -2,7 +2,12 @@ import { createWorkboard } from './workboard-ui.mjs';
 
 const $ = id => document.getElementById(id);
 let session, protocol, nextId = 1, mission, lastExecution, busy = false, connected = false, needsRefresh = false;
-let missions = [];
+let missions = [], toolCount = 0;
+function connectionLabel(text, state) {
+  $('connection').textContent = text;
+  $('connection').dataset.state = state;
+}
+function showConnected() { connectionLabel(`● Connected · ${toolCount} tools · loopback HTTP`, 'connected'); }
 const rememberedMissionKey = 'hearthline.open-mission';
 const workboardUI = createWorkboard({ tool, run, event, verdict });
 const evidence = { schema: 'hearthline.browser-demonstration/v1', startedAt: new Date().toISOString(), environment: { runtime: 'real local MCP over HTTP', weather: 'synthetic fixture', externalEffects: false, alexaDevice: false, languageModel: false }, events: [] };
@@ -28,7 +33,7 @@ function rememberedMission() { try { return sessionStorage.getItem(rememberedMis
 function updateControls() {
   const action = selected(), unavailable = busy || !connected;
   $('prepare').disabled = unavailable;
-  $('refresh-missions').disabled = unavailable;
+  $('refresh-missions').disabled = busy;
   $('mission-picker').disabled = unavailable || !missions.length;
   $('open-mission').disabled = unavailable || !missions.length;
   $('action').disabled = unavailable || !mission;
@@ -120,18 +125,20 @@ async function rpc(method, params = {}, { notification = false, initialize = fal
   return body.result;
 }
 async function connect() {
-  connected = false; updateControls();
+  connected = false; connectionLabel('Connecting to local MCP…', 'connecting'); updateControls();
   const info = await rpc('initialize', { protocolVersion: '2025-11-25', clientInfo: { name: 'Hearthline browser demonstration', version: '1.0.0' }, capabilities: {} }, { initialize: true });
   protocol = info.protocolVersion;
   if (!session || protocol !== '2025-11-25') throw new Error('Unexpected MCP negotiation');
   await rpc('notifications/initialized', {}, { notification: true });
   const tools = await rpc('tools/list');
   $('protocol').textContent = `MCP ${protocol}`;
-  $('connection').textContent = `● Connected · ${tools.tools.length} tools · loopback HTTP`;
+  toolCount = tools.tools.length;
   event(`Connected to ${info.serverInfo.name}`, { protocol, tools: tools.tools.map(t => t.name) });
   connected = true;
   await status();
   await refreshMissions({ resume: true });
+  needsRefresh = false;
+  showConnected();
 }
 async function tool(name, args, expectedError = false) {
   const result = await rpc('tools/call', { name, arguments: args });
@@ -187,7 +194,7 @@ async function refreshMissions({ resume = false } = {}) {
 async function run(action) {
     if (busy) return;
     busy = true; updateControls();
-    try { await action(); }
+    try { await action(); if (connected && !needsRefresh) showConnected(); }
     catch (error) {
       needsRefresh = true;
       // Reconcile a rejected or uncertain operation with read-only tools. Never
@@ -196,13 +203,17 @@ async function run(action) {
         try { await openMission(mission.id); }
         catch { needsRefresh = true; }
       }
+      if (needsRefresh) {
+        connected = false;
+        connectionLabel('● Connection interrupted · refresh saved missions', 'interrupted');
+      } else if (connected) showConnected();
       event('Operation failed', { error: error.message });
       verdict(`Stopped: ${error.message}${needsRefresh ? ' Refresh saved missions before another action.' : ' Current saved state is shown.'}`);
     }
     finally { busy = false; updateControls(); }
 }
 function bind(id, action) { $(id).addEventListener('click', () => void run(action)); }
-bind('refresh-missions', () => refreshMissions());
+bind('refresh-missions', () => connected ? refreshMissions() : connect());
 bind('open-mission', () => openMission($('mission-picker').value));
 bind('prepare', async () => {
   await tool('hearthline_prepare_storm', { title: 'Get the household storm-ready', latitude: 38.2, longitude: -85.7, household: { people: 2, pets: 1 } });
@@ -268,5 +279,5 @@ bind('download-workspace', async () => {
 });
 window.hearthlineDemo = { evidence, snapshot: () => ({ mission, lastExecution, ...workboardUI.snapshot() }) };
 busy = true; updateControls();
-connect().catch(error => { connected = false; $('connection').textContent = 'Connection failed'; event('Connection failed', { error: error.message }); verdict(error.message); })
+connect().catch(error => { connected = false; connectionLabel('Connection failed · refresh saved missions', 'interrupted'); event('Connection failed', { error: error.message }); verdict(error.message); })
   .finally(() => { busy = false; updateControls(); });
