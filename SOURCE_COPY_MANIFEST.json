@@ -208,17 +208,17 @@
       "path": "hearthline-browser-demo/app.mjs",
       "git_blob_sha": "044d82fe07d83511d5b41d856ca0a2e048989698",
       "upstream_size_bytes": 18070,
-      "local_sha256": "051f6c797308a33d81a781d332b3fd1787bdda565ed6e82dc22859c1e7d86015",
-      "local_bytes": 18070,
-      "unchanged_from_upstream": true
+      "local_sha256": "203bcb59199c0ab2b994515d8c402bd08d1d048b885ec2b1c3320194a6d5a4ab",
+      "local_bytes": 18650,
+      "unchanged_from_upstream": false
     },
     {
       "path": "hearthline-browser-demo/index.html",
       "git_blob_sha": "986bcde275a5d1cca0fbdb0d298a3413bb84e87d",
       "upstream_size_bytes": 5935,
-      "local_sha256": "b753090e126a947b9fc9bb6e78c9b45f6fa8c76d47653526e18ca18d19c81bc8",
-      "local_bytes": 5935,
-      "unchanged_from_upstream": true
+      "local_sha256": "597ec7464ed977e7f22b2a933e464604a99a826e8c977d566af870c31124c678",
+      "local_bytes": 5968,
+      "unchanged_from_upstream": false
     },
     {
       "path": "hearthline-browser-demo/record-workboard.mjs",
@@ -248,9 +248,9 @@
       "path": "hearthline-browser-demo/style.css",
       "git_blob_sha": "e4051703cff772d7daf3fad5d76580c38a776d89",
       "upstream_size_bytes": 8652,
-      "local_sha256": "ba1ab1a89f92260172a84dec3a02c9a5702742837ea7dd95e24b7f933c873f52",
-      "local_bytes": 8652,
-      "unchanged_from_upstream": true
+      "local_sha256": "ab1f569945a38c75701d8b99e5c63f9724b6fbd673c5e4256e50db7b12f6ea7d",
+      "local_bytes": 8722,
+      "unchanged_from_upstream": false
     },
     {
       "path": "hearthline-browser-demo/workboard-ui.mjs",
@@ -284,6 +284,9 @@
     "hearthline-alexa-mcp/docs/MCP_APP_CONTROLS.md",
     "hearthline-alexa-mcp/docs/FRICTION_LOG.md",
     "hearthline-browser-demo/BUILD_FEEDBACK.md",
-    "hearthline-browser-demo/README.md"
+    "hearthline-browser-demo/README.md",
+    "hearthline-browser-demo/app.mjs",
+    "hearthline-browser-demo/index.html",
+    "hearthline-browser-demo/style.css"
   ]
 }
